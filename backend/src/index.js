@@ -51,7 +51,7 @@ app.delete('/passwordservice/:what', (req, res) => {
     const what = req.params.what;
     passwordService.deletePassword(what);
 
-    return res.send('OK');
+    return res.send(JSON.stringify({ deleted: true }));
 });
 
 app.listen(3001)

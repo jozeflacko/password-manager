@@ -15,8 +15,8 @@ it('readPassword', () => {
    const passwords = passwordService.readPasswords();
    expect(passwords).toEqual(
        [
-          'For "jö" on web side "www.jö.at" you should use username "dashenka92" and password "12345".',
-          'For "spar" on web side "www.spar.at" you should use username "dashenka92" and password "65498".'
+          'For "jö" on web side "www.jö.at" you should use username "dashenka92" and Password "12345".',
+          'For "spar" on web side "www.spar.at" you should use username "dashenka92" and Password "65498".'
        ]
    );
 });
@@ -29,8 +29,8 @@ it('updatePassword', () => {
 
     expect(passwords).toEqual(
         [
-            'For "jö" on web side "www.jö.at" you should use username "dashenka92" and password "12345".',
-            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and password "65498".'
+            'For "jö" on web side "www.jö.at" you should use username "dashenka92" and Password "12345".',
+            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and Password "65498".'
         ]
     );
 
@@ -40,8 +40,8 @@ it('updatePassword', () => {
 
     expect(passwords).toEqual(
         [
-            'For "jö" on web side "www.joe.at" you should use username "dashenka9222" and password "1234566".',
-            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and password "65498".'
+            'For "jö" on web side "www.joe.at" you should use username "dashenka9222" and Password "1234566".',
+            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and Password "65498".'
         ]
     );
 
@@ -55,8 +55,8 @@ it('deletePassword', () => {
 
     expect(passwords).toEqual(
         [
-            'For "jö" on web side "www.jö.at" you should use username "dashenka92" and password "12345".',
-            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and password "65498".'
+            'For "jö" on web side "www.jö.at" you should use username "dashenka92" and Password "12345".',
+            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and Password "65498".'
         ]
     );
 
@@ -66,7 +66,7 @@ it('deletePassword', () => {
 
     expect(passwords).toEqual(
         [
-            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and password "65498".'
+            'For "spar" on web side "www.spar.at" you should use username "dashenka92" and Password "65498".'
         ]
     );
 });
